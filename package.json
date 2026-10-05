@@ -1,0 +1,27 @@
+{
+  "name": "@tasqnetwork/sdk",
+  "version": "0.0.1",
+  "description": "TypeScript client for TasQ, a marketplace for private AI compute.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist", "src", "README.md", "LICENSE"],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "keywords": ["tasq", "ai", "compute", "confidential-computing", "attestation"],
+  "homepage": "https://tasqnetwork.io",
+  "repository": { "type": "git", "url": "https://github.com/tasqProject/tasq-sdk.git" },
+  "engines": { "node": ">=18" },
+  "dependencies": {
+    "@noble/ciphers": "^1.0.0",
+    "@noble/curves": "^1.6.0",
+    "@noble/hashes": "^1.5.0",
+    "@noble/post-quantum": "^0.2.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}
